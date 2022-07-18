@@ -5,6 +5,8 @@ public class OneWayList {
     private Element tail;
     private int length = 0;
 
+    //TODO - sortowanie, wyszukiwanie, usuwanie konkretu, do tablcy, fuzja, substract,
+
     public int getLength() {
         return length;
     }
@@ -65,10 +67,25 @@ public class OneWayList {
         }
         return this;
     }
+    public boolean find(int value) {
+        if (!isEmpty()) {
+            Element tmp = head;
+            while (tmp.getValue() != value) {
+                if (tmp == tail) {
+                    return false;
+                }
+                tmp = tmp.getNextElement();
+            }
+        }
+        else{
+            return false;
+        }
+        return true;
+    }
 
     public void show(){
         if(!isEmpty()){
-            System.out.print("Kolejne elementy listy: [ ");
+            System.out.print("Subsequent list item: [ ");
             Element tmp = head;
             while (tmp != null){
                 System.out.printf("%d ", tmp.getValue());
