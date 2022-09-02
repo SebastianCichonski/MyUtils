@@ -2,12 +2,10 @@ package OneWayLists;
 
 import org.jetbrains.annotations.NotNull;
 
-public class OneWayList {
-    private Element head;
-    private Element tail;
+public class OneWayList<E> {
+    private Element<E> head;
+    private Element<E> tail;
     private int length = 0;
-
-    //TODO - sortowanie, wyszukiwanie, usuwanie konkretu, do tablcy, fuzja, substract,
 
     public int getLength() {
         return length;
@@ -15,8 +13,8 @@ public class OneWayList {
     public boolean isEmpty(){
         return (head == null);
     }
-    public OneWayList addLast(int value){
-        Element element = new Element(value);
+    public OneWayList<E> addLast(E value){
+        Element<E> element = new Element<>(value);
         if(isEmpty()){
             head = element;
         }
@@ -27,8 +25,8 @@ public class OneWayList {
         ++length;
         return this;
     }
-    public OneWayList addFirst(int value){
-        Element element = new Element(value);
+    public OneWayList<E> addFirst(E value){
+        Element<E> element = new Element<>(value);
         if(isEmpty()){
             head = element;
             tail = element;
@@ -40,23 +38,23 @@ public class OneWayList {
         ++length;
         return this;
     }
-    public OneWayList delFirst(){
+    public OneWayList<E> delFirst(){
         if(!isEmpty()){
-            Element tmp = head;
+            Element<E> tmp = head;
             head = head.getNextElement();
             tmp.setNextElement(null);
             --length;
         }
         return this;
     }
-    public OneWayList delLast(){
+    public OneWayList<E> delLast(){
         if(!isEmpty()){
             if(head == tail){
                 head = null;
                 tail = null;
             }
             else{
-                Element tmp = head;
+                Element<E> tmp = head;
                 while (tmp.getNextElement() != tail) {
                     tmp = tmp.getNextElement();
                 }
@@ -67,36 +65,36 @@ public class OneWayList {
         }
         return this;
     }
-    public int[] toArray(){
-        int[] tab = new int[this.getLength()];
+    public Object[] toArray(){
+        Object[] tab = new Object[this.length];
         int i = 0;
-        for(Element element = head; element != null; element = element.getNextElement()){
-            tab[i++] = element.getValue();
+        for(Element<E> element = head; element != null; element = element.getNextElement()){
+            tab[i++] = element.value;
         }
         return tab;
     }
-    public OneWayList clone(){
-        OneWayList clone = new OneWayList();
+    public OneWayList<E> clone(){
+        OneWayList<E> clone = new OneWayList<>();
         clone.reset();
-        for(Element element = head; element != null; element = element.getNextElement()){
-            clone.addLast(element.getValue());
+        for(Element<E> element = head; element != null; element = element.getNextElement()){
+            clone.addLast(element.value);
         }
         return clone;
     }
-    public OneWayList merge(@NotNull OneWayList list){
-        OneWayList result = new OneWayList();
-        this.tail.setNextElement(list.head);
-        this.length += list.length;
-        return this;
-    }
+//    public OneWayList<E> merge(@NotNull OneWayList<E> list){
+//        OneWayList<E> result = new OneWayList<>();
+//        result.tail.setNextElement(list.head);
+//        result.length += list.length;
+//        return result;
+//    }
     private void reset() {
         head = tail = null;
         length = 0;
     }
-    public boolean find(int value) {
+    public boolean find(E value) {
         if (!isEmpty()) {
-            Element tmp = head;
-            for(;tmp.getValue() != value;tmp = tmp.getNextElement()){
+            Element<E> tmp = head;
+            for(; tmp.value != value; tmp = tmp.getNextElement()){
                 if (tmp == tail)  return false;
             }
         }
@@ -105,6 +103,7 @@ public class OneWayList {
         }
         return true;
     }
+
 //    public boolean findSort(int value) {
 //        if (!isEmpty()) {
 //            Element tmp = head;
@@ -117,25 +116,38 @@ public class OneWayList {
 //        }
 //        return true;
 //    }
-
-
-
-
-
     public void show(){
         if(!isEmpty()){
             System.out.print("Subsequent list item: [ ");
-            Element tmp = head;
+            Element<E> tmp = head;
             while (tmp != null){
-                System.out.printf("%d ", tmp.getValue());
+                System.out.print(tmp.value.toString() + ", ");
                 tmp = tmp.getNextElement();
             }
             System.out.print("]");
-            System.out.printf(" :: < %d >\n", this.getLength());
+            System.out.printf(" :: < %d >\n", this.length);
         }
         else {
             System.out.println("__List is empty!__");
         }
 
+    }
+
+    private static class Element<E> {
+        private Element<E> nextElement;
+        private final E value;
+
+        public Element(E value) {
+            this.nextElement = null;
+            this.value = value;
+        }
+
+        public Element<E> getNextElement() {
+            return nextElement;
+        }
+
+        public void setNextElement(Element<E> nextElement) {
+            this.nextElement = nextElement;
+        }
     }
 }

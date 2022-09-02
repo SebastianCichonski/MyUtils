@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcff2af5-981a-4c71-a08e-f950903443dd" name="Changes" comment="v2">
+    <list default="true" id="fcff2af5-981a-4c71-a08e-f950903443dd" name="Changes" comment="merge, clone, reset, toArray,">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OneWayLists/Element.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OneWayLists/OneWayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OneWayLists/OneWayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestList.java" afterDir="false" />
     </list>
@@ -34,12 +35,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/sebastian.cichonski/IdeaProjects/MyUtils"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TestList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestList" />
@@ -77,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658149540695</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="merge, clone, reset, toArray,">
+      <created>1658266858007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658266858007</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +103,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+    <MESSAGE value="merge, clone, reser, toArray," />
+    <MESSAGE value="merge, clone, reset, toArray," />
+    <option name="LAST_COMMIT_MESSAGE" value="merge, clone, reset, toArray," />
   </component>
 </project>
