@@ -7,6 +7,14 @@ public class OneWayList<E> {
     private Element<E> tail;
     private int length = 0;
 
+    public OneWayList (E...elements) {
+        for(E element : elements){
+            this.addLast(element);
+        }
+    }
+
+    public OneWayList() { }
+
     public int getLength() {
         return length;
     }
@@ -73,6 +81,15 @@ public class OneWayList<E> {
         }
         return tab;
     }
+
+    public E getFirst(){
+        return head.value;
+    }
+
+    public E getLast(){
+        return tail.value;
+    }
+
     public OneWayList<E> clone(){
         OneWayList<E> clone = new OneWayList<>();
         clone.reset();
@@ -81,13 +98,14 @@ public class OneWayList<E> {
         }
         return clone;
     }
+
 //    public OneWayList<E> merge(@NotNull OneWayList<E> list){
 //        OneWayList<E> result = new OneWayList<>();
 //        result.tail.setNextElement(list.head);
 //        result.length += list.length;
 //        return result;
 //    }
-    private void reset() {
+    public void reset() {
         head = tail = null;
         length = 0;
     }
@@ -104,18 +122,6 @@ public class OneWayList<E> {
         return true;
     }
 
-//    public boolean findSort(int value) {
-//        if (!isEmpty()) {
-//            Element tmp = head;
-//            for(;tmp.getValue() != value;tmp = tmp.getNextElement()){
-//                if (tmp == tail)  return false;
-//            }
-//        }
-//        else{
-//            return false;
-//        }
-//        return true;
-//    }
     public void show(){
         if(!isEmpty()){
             System.out.print("Subsequent list item: [ ");

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcff2af5-981a-4c71-a08e-f950903443dd" name="Changes" comment="merge, clone, reset, toArray,">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Person.java" afterDir="false" />
+    <list default="true" id="fcff2af5-981a-4c71-a08e-f950903443dd" name="Changes" comment="del Element.java, generic type">
+      <change afterPath="$PROJECT_DIR$/src/test/java/OneWayLists/OneWayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OneWayLists/Element.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/OneWayLists/OneWayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OneWayLists/OneWayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestList.java" afterDir="false" />
     </list>
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,20 +40,106 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/sebastian.cichonski/IdeaProjects/MyUtils"
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/sebastian.cichonski/IdeaProjects/Tests"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="TestList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestList" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="OneWayLists" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.OneWayListTest">
+    <configuration name="OneWayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OneWayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OneWayLists" />
+      <option name="MAIN_CLASS_NAME" value="OneWayLists.OneWayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneWayListTest.testAddFirst_x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OneWayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OneWayLists" />
+      <option name="MAIN_CLASS_NAME" value="OneWayLists.OneWayListTest" />
+      <option name="METHOD_NAME" value="testAddFirst_x3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneWayListTest.testAddLastParams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OneWayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OneWayLists" />
+      <option name="MAIN_CLASS_NAME" value="OneWayLists.OneWayListTest" />
+      <option name="METHOD_NAME" value="testAddLastParams(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneWayListTest.testAddLast_x3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OneWayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OneWayLists" />
+      <option name="MAIN_CLASS_NAME" value="OneWayLists.OneWayListTest" />
+      <option name="METHOD_NAME" value="testAddLast_x3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneWayListTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="OneWayLists.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="OneWayLists" />
+      <option name="MAIN_CLASS_NAME" value="OneWayLists.OneWayListTest" />
+      <option name="METHOD_NAME" value="testFind" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestList" />
+        <item itemvalue="JUnit.OneWayListTest" />
+        <item itemvalue="JUnit.OneWayListTest.testAddFirst_x3" />
+        <item itemvalue="JUnit.OneWayListTest.testAddLast_x3" />
+        <item itemvalue="JUnit.OneWayListTest.testFind" />
+        <item itemvalue="JUnit.OneWayListTest.testAddLastParams" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658266858007</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="del Element.java, generic type">
+      <created>1662157815895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662157815895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +199,12 @@
     <MESSAGE value="v2" />
     <MESSAGE value="merge, clone, reser, toArray," />
     <MESSAGE value="merge, clone, reset, toArray," />
-    <option name="LAST_COMMIT_MESSAGE" value="merge, clone, reset, toArray," />
+    <MESSAGE value="del Element.java, generic type" />
+    <option name="LAST_COMMIT_MESSAGE" value="del Element.java, generic type" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MyUtils$OneWayListTest.ic" NAME="OneWayListTest Coverage Results" MODIFIED="1662834070674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>OneWayLists.*</FILTER>
+    </SUITE>
   </component>
 </project>
